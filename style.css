@@ -1,0 +1,131 @@
+body {
+    background-image: linear-gradient(270deg, rgb(80, 101, 20), rgb(142, 241, 245), rgb(88, 54, 244));
+    margin: auto;
+  }
+  #parent{
+    width: fit-content;
+    margin: auto;
+  }
+  
+  #music{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #music i{
+    margin: 5px;
+  }
+  
+  #title
+  {
+     margin: auto;
+     color: blue;
+     text-align: center;
+     margin-bottom: 25px;
+  }
+  
+  .demo
+  {
+      display: flex;
+      align-items: center;
+      background-color: azure;
+      margin-bottom: 0;
+      width: 800px;
+      text-align: center;
+      padding: 0 10px;
+  }
+  .demo img
+  {
+      padding: 25px;
+  }
+  button
+  {
+      display: block;
+      margin: auto;
+      text-align: center;
+      border-radius: 5px;
+      margin-top: 25px;
+      width: 100px;
+      height: 50px;
+  }
+  
+  
+  
+  .glow {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  #download{
+    display: block;
+    text-align:right;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+  #link1{
+    display: inline-block;
+    font-size: 20px;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+  }
+  #link2{
+    display: inline-block;
+    font-size: 20px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+  @media only screen and (max-width: 520px) {
+    #parent {
+      box-sizing: border-box;
+    }
+    .demo {
+      flex-wrap: wrap;
+    }
+    .demo img{
+      margin: auto;
+    }
+    .quote {
+      margin: auto;
+    }
+    html {
+          zoom: .4;
+        }
+  }
+  
+  @media only screen and (max-width: 829px) {
+    body{
+      margin: auto;
+    }
+  
+    #parent {
+      margin: auto;
+    }
+    .demo {
+      max-width: min-content;
+      margin: auto;
+    }
+    .demo img{
+      margin: auto;
+    }
+    .quote {
+      margin: auto;
+    }
+  }
+  

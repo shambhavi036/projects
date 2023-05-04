@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Favicon favicon.io -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <!-- End of Favicon Links-->
+</head>
+
+<body onload="divToImg()">
+    <audio id="myAudio1" loop>
+        <source src="audio/music1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="myAudio2" loop>
+        <source src="audio/music2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="music">
+    <i class="fa fa-play" onclick="playAudio1()" id="playpause1"></i>
+
+    <i class="fa fa-play fa-rotate-180" onclick="playAudio2()" id="playpause2"></i>
+    </div>
+
+    <div id="parent">
+        <h1 id="title" class="glow">Bhagavad Gita</h1>
+        <div class="demo">
+            <img src="img/gita1.jpg" width="300px" height="350px" alt="image is not available">
+            <h1 id="demo" class="quote">Through selfless service, you will always be fruitful and find the fulfillment of your desires.</h1>
+        </div>
+         <a id="download" class="glow">Download</a>
+         <button onclick="change()">Next</button>
+    </div>
+    
+    <div id="links"> 
+        <a id="link1" class="glow" href="./books/english.pdf" target="_blank">Read Gita in English</a>
+        <a id="link2" class="glow" href="./books/telugu.pdf" target="_blank">Read Gita in Telugu</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
